@@ -1,0 +1,24 @@
+package session18;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		String requiredProduct = "ADIDAS ORIGINAL";
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/client");
+		driver.manage().window().maximize();
+		
+		List<WebElement> products = driver.findElements(By.cssSelector("div.card-body b"));
+		String expectedProduct = products.stream().filter(s->s.getText().contains(requiredProduct)).findFirst().orElse(null);
+		
+
+	}
+
+}

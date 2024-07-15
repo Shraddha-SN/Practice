@@ -1,0 +1,10 @@
+package session17;
+
+public class ChildC {
+
+	@Test
+	public void runTest() {
+		
+	}
+	
+}

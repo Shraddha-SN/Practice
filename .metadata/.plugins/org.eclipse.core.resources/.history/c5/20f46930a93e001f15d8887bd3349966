@@ -1,0 +1,15 @@
+package session17;
+
+import org.junit.jupiter.api.Test;
+
+public class ChildC extends ParentC{
+
+	@Test
+	public void runTest() {
+		int a;
+		doThis();
+		PS3 ps = new PS3();
+		System.out.println()PS3.sum();
+	}
+	
+}

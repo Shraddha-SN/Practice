@@ -1,0 +1,12 @@
+package session17;
+
+import org.junit.jupiter.api.Test;
+
+public class ChildC extends ParentC{
+
+	@Test
+	public void runTest() {
+		
+	}
+	
+}

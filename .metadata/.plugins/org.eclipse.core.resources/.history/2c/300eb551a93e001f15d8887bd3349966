@@ -1,0 +1,16 @@
+package session17;
+
+public class PS3 {
+
+	int a;
+	public int sum() {
+		a = a+1;
+		return a;
+	}
+	
+	public int substract() {
+		a = a-1;
+		return a;
+	}
+	
+}

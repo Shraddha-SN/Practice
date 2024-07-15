@@ -1,0 +1,10 @@
+package session17;
+
+public class ParentC {
+
+	@Test
+	public void doThis() {
+		System.out.println("I am here");
+	}
+	
+}

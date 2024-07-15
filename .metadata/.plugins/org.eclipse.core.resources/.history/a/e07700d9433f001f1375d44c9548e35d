@@ -1,0 +1,28 @@
+package session18;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebElement;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		String requiredProduct = "ADIDAS ORIGINAL";
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/client");
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.id("userEmail")).sendKeys("sn10@gmail.com");
+		driver.findElement(By.id("userPassword")).sendKeys("1234567890Sa@");
+		driver.findElement(By.id("login")).click();
+		
+		List<WebElement> products = driver.findElements(By.cssSelector("div.card-body"));
+		WebElement expectedProduct = products.stream().filter(s->s.findElement(By.tagName("b").contains(requiredProduct)).findFirst().orElse(null);
+		expectedProduct.findElement(By.cssSelector(".card-body button:last-of-type")).click();
+
+	}
+
+}

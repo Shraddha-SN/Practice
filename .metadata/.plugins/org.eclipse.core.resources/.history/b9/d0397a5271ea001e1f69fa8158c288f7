@@ -1,0 +1,10 @@
+package session11;
+
+public class GetLinksFromUI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
